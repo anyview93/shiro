@@ -1,9 +1,7 @@
 package com.example.shiro.controller;
 
 import org.apache.shiro.SecurityUtils;
-import org.apache.shiro.authc.AuthenticationException;
 import org.apache.shiro.authc.UsernamePasswordToken;
-import org.apache.shiro.authz.AuthorizationException;
 import org.apache.shiro.authz.annotation.RequiresPermissions;
 import org.apache.shiro.authz.annotation.RequiresRoles;
 import org.apache.shiro.subject.Subject;
@@ -49,7 +47,7 @@ public class LoginController {
         return "index!";
     }
 
-    @GetMapping("/error")
+    @GetMapping("/err")
     public Object error(){
         return "错误结果";
     }
